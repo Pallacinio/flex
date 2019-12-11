@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+ }     
+
+@media (min-width:992px) {
+    .container {
+    display: flex;
+    flex-direction: row;
+    }
+    .flex-item:nth-of-type(1) {
+    color: #fff;
+    background-color: green;
+    height: 400px;
+    flex-basis: 20%;
+    text-align: center; 
+    }
+    .flex-item:nth-of-type(2) {
+    color: white;
+    background-color: cyan;
+    height: 400px;
+    flex-basis: 60%;
+    text-align: center 
+    }
+    .flex-item:nth-of-type(3) {
+    color: white;
+    background-color: pink;
+    height: 400px;
+    flex-basis: 20%;
+    text-align: center; 
+    }
+    header {
+    background-color: red;
+    color: white;
+    height: 50px;
+    text-align: center; 
+    }
+    footer {
+    background-color: purple;
+    color: white;
+    height: 50px;
+    text-align: center; 
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        }
+        .flex-item:nth-of-type(1) {
+        color: #fff;
+        background-color: green;
+        height: 200px;
+        text-align: center; 
+        flex-basis: 100%;
+        }
+        .flex-item:nth-of-type(2) {
+        color: white;
+        background-color: cyan;
+        height: 200px;
+        text-align: center; 
+        flex-basis: 75%;
+        }
+        .flex-item:nth-of-type(3) {
+        color: white;
+        background-color: pink;
+        height: 200px;
+        text-align: center;
+        flex-basis: 25%;
+        }
+        header {
+        background-color: red;
+        color: white;
+        height: 50px;
+        text-align: center; 
+        }
+        footer {
+        background-color: purple;
+        color: white;
+        height: 50px;
+        text-align: center;
+        }
+}
+@media (max-width:767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        }
+        .flex-item:nth-of-type(1) {
+        color: #fff;
+        background-color: green;
+        height: 200px;
+        text-align: center; 
+        order: 2;
+        }
+        .flex-item:nth-of-type(2) {
+        color: white;
+        background-color: cyan;
+        height: 200px;
+        text-align: center;
+        order: 1; 
+        }
+        .flex-item:nth-of-type(3) {
+        color: white;
+        background-color: pink;
+        height: 200px;
+        text-align: center;
+        order: 3;
+        }
+    header {
+        background-color: red;
+        color: white;
+        height: 50px;
+        text-align: center; 
+        }
+    footer {
+        background-color: purple;
+        color: white;
+        height: 50px;
+        text-align: center;
+        }
+    }
